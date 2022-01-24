@@ -12,7 +12,7 @@ export class HealthController {
   @Get(HEALTH_PATH)
   @ApiOperation({ summary: 'Health check' })
   @ApiResponse({
-    description: 'Return status pass',
+    description: 'Return OK message',
     status: HttpStatus.OK,
   })
   getStatus(): string {

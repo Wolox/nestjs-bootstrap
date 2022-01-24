@@ -31,6 +31,6 @@ describe('Health check suite test 🧪', () => {
   test(`${HEALTH_PATH} (GET) should be return a 200 status ✅`, async () =>
     await request(app.getHttpServer()).get(HEALTH_PATH).expect(HttpStatus.OK));
 
-  test(`${HEALTH_PATH} (GET) should be return status pass ✅`, async () =>
+  test(`${HEALTH_PATH} (GET) should be return OK message ✅`, async () =>
     await request(app.getHttpServer()).get(HEALTH_PATH).expect('OK'));
 });

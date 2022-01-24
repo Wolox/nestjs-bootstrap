@@ -1,7 +1,7 @@
 {
   "name": "nest-js-bootstrap",
   "version": "0.0.0",
-  "description": "wolox nest.js bootstrap",
+  "description": "Wolox Nest.js bootstrap",
   "author": "Yovanny López",
   "license": "MIT",
   "keywords": [
@@ -9,7 +9,8 @@
     "Nest.js",
     "Typescript",
     "Template",
-    "Bootstrap"
+    "Bootstrap",
+    "Wolox"
   ],
   "scripts": {
     "build": "nest build",

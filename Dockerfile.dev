@@ -1,17 +1,12 @@
-# LTS image from docker hub
 FROM node:14.18.0-alpine
 
-# Create app directory
-WORKDIR /usr/src/app
+WORKDIR /usr/src/
 
-# Copy local files to the docker image
-COPY . /usr/src/app
-
-# Install dependencies
+COPY package*.json ./
+COPY .npmrc .
 RUN npm install
+COPY . .
 
-# Expose the port where the app will run
 EXPOSE 3000
 
-# Start the application
-CMD [ "npm", "run", "dev" ]
+CMD ["npm", "run", "dev"]
