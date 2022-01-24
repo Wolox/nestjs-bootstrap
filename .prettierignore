@@ -1,0 +1,7 @@
+config/
+documentation/
+coverage/
+
+dist/
+build/
+app/

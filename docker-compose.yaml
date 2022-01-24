@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  mts-qr-bff:
+    container_name: merchants-nx
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./:/usr/src/
+      - /usr/src/node_modules
+    ports:
+      - '3000:3000' # Run server port
+      - '9229:9229' # Debug port
+    restart: always
