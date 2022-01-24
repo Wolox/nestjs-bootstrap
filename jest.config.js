@@ -5,6 +5,7 @@ module.exports = {
     '!src/**/*.d.ts',
     '!src/main.ts',
     '!src/common/**/*.ts',
+    '!src/infrastructure/**/*.ts',
   ],
   coverageDirectory: 'coverage',
   coverageThreshold: {
