@@ -9,5 +9,5 @@ export default (app: INestApplication, packageJson: any) => {
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('api-docs', app, document);
 };
