@@ -43,6 +43,7 @@
     "class-validator": "^0.13.1",
     "compression": "^1.7.4",
     "config": "^1.30.0",
+    "express-wolox-logger": "^4.0.1",
     "helmet": "^4.6.0",
     "lodash": "^4.17.21",
     "reflect-metadata": "^0.1.13",
