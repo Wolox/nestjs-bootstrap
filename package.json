@@ -17,9 +17,9 @@
     "debug": "nest start --debug --watch",
     "dev": "nest start --watch",
     "doc": "npx compodoc -p tsconfig.json -s --theme laravel --disableCoverage",
-    "docker:up": "docker-compose up -d",
-    "docker:down": "docker-compose down",
     "docker:debug": "npm-run-all docker-up",
+    "docker:down": "docker-compose down",
+    "docker:up": "docker-compose up -d",
     "format": "prettier --write \"{src,test}/**/*.ts\"",
     "lint": "eslint \"{src,test}/**/*.ts\" --fix",
     "pipeline": "npm run lint && npm run test:coverage",
@@ -28,9 +28,9 @@
     "start": "nest start",
     "start:prod": "node app/main.js",
     "test": "jest",
-    "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@nestjs/axios": "^0.0.4",

@@ -1,11 +1,7 @@
 npm-debug.log
-.gitlab-ci.yml
-.retireignore
 .npmignore
 .gitignore
 .eslintrc
 test/
-scripts/
 README.md
-charts-output/
 node_modules/
