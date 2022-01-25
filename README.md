@@ -1,4 +1,4 @@
-# nest.js bootstrap
+# Nest.js Bootstrap
 
 > Wolox Nest.js Bootstrap
 
@@ -105,7 +105,7 @@ $ npm run start:prod
 $ npm run test
 
 # test coverage
-$ npm run coverage
+$ npm run test:coverage
 ```
 
 <small>Note:<i>You can see the testing coverage report in the coverage folder.</i></small>
@@ -206,7 +206,9 @@ Visit: http://localhost:8080
 
 ## Conventions 🚩
 
-lorem ipsum
+- [Semantic Versioning](https://semver.org/)
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/)
+- [Markdown Guide](https://www.markdownguide.org/)
 
 ---
 
@@ -233,10 +235,12 @@ curl --location --request GET 'URL/api/health'
 - Yovanny López (Backend Developer)
 - Maximiliano Espindola (Backend Developer)
 - Nicolás Palenque (Backend Developer)
+- Mario Portela (Technical Reviewer)
 
 ---
 
 ## Copyright ©️
 
-Copyright (C) Wolox 2022. All rights reserved.
+Copyright (C) Wolox part of Accenture 2022. All rights reserved.
 
+---

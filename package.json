@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Wolox Nest.js bootstrap",
   "author": "Yovanny López",
-  "license": "MIT",
+  "license": "ISC",
   "keywords": [
     "Node.js",
     "Nest.js",
@@ -22,7 +22,7 @@
     "docker:debug": "npm-run-all docker-up",
     "format": "prettier --write \"{src,test}/**/*.ts\"",
     "lint": "eslint \"{src,test}/**/*.ts\" --fix",
-    "pipeline": "npm run lint && npm run test:coverage && npm run dependency-check",
+    "pipeline": "npm run lint && npm run test:coverage",
     "prebuild": "rimraf app",
     "release": "npx standard-version --release-as ",
     "start": "nest start",
@@ -30,8 +30,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "dependency-check": "depcheck --skip-missing"
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
   },
   "dependencies": {
     "@nestjs/axios": "^0.0.4",
@@ -59,7 +58,6 @@
     "@types/supertest": "^2.0.10",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
-    "depcheck": "^1.4.2",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -80,7 +78,7 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run lint && npm test && npm run dependency-check"
+      "pre-commit": "npm run lint && npm test"
     }
   },
   "contributors": [
