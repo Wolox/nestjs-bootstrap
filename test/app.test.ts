@@ -3,7 +3,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import * as request from 'supertest';
 
 import { AppModule } from 'src/app.module';
-import { appRootError } from './mocks/appRoot.mock';
+import { appRootError } from './mocks/app-root.mock';
 
 describe('app root suite test 🧪', () => {
   let app: INestApplication;
