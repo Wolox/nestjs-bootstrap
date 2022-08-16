@@ -1,15 +1,13 @@
-import { HttpStatus, INestApplication } from '@nestjs/common';
-import { Test, TestingModule } from '@nestjs/testing';
-
 import * as request from 'supertest';
 
 import { HEALTH_PATH, VERSION_PATH } from 'src/common/constants/path.constants';
-import packageJson from 'src/common/helpers/package-json.helper';
-
-import { HealthController } from 'src/domain/health/controllers/health.controller';
-import { HealthService } from 'src/domain/health/services/health.service';
+import { HttpStatus, INestApplication } from '@nestjs/common';
+import { Test, TestingModule } from '@nestjs/testing';
 
 import { AppModule } from 'src/app.module';
+import { HealthController } from 'src/domain/health/controllers/health.controller';
+import { HealthService } from 'src/domain/health/services/health.service';
+import packageJson from 'src/common/helpers/package-json.helper';
 
 describe('Health check suite test 🧪', () => {
   let app: INestApplication;
