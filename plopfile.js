@@ -8,7 +8,7 @@ module.exports = function (plop) {
         type: 'list',
         name: 'action',
         message: 'Project type',
-        choices: ['Backend for frontend', 'MS with MongoDB-Mongoose', 'MS with MySQL-Sequelize', 'MS with PostgreSQL-Sequelize'],
+        choices: ['Backend for frontend', 'MS with MongoDB-Mongoose', 'MS with MySQL-Sequelize', 'MS with PostgreSQL-Sequelize', 'MS with MySQL-TypeORM', 'MS with PostgreSQL-TypeORM'],
       },
       {
         type: 'input',
@@ -98,6 +98,32 @@ module.exports = function (plop) {
               dot: true,
             },
             templateFiles: 'templates/sequelize/postgresql/**/*',
+            type: 'addMany',
+          }
+        );
+      } else if (data.action === 'MS with MySQL-TypeORM') {
+        actions = actions.concat(
+          {
+            base: 'templates/typeorm/mysql',
+            destination: 'app',
+            force: true,
+            globOptions: {
+              dot: true,
+            },
+            templateFiles: 'templates/typeorm/mysql/**/*',
+            type: 'addMany',
+          }
+        );
+      } else if (data.action === 'MS with PostgreSQL-TypeORM') {
+        actions = actions.concat(
+          {
+            base: 'templates/typeorm/postgresql',
+            destination: 'app',
+            force: true,
+            globOptions: {
+              dot: true,
+            },
+            templateFiles: 'templates/typeorm/postgresql/**/*',
             type: 'addMany',
           }
         );
