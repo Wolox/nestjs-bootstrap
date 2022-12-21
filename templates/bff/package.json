@@ -6,7 +6,7 @@
   "license": "{{license}}",
   "scripts": {
     "build": "nest build",
-    "coverage": "jest --coverage --verbose --passWithNoTests",
+    "coverage": "NODE_ENV=local jest --coverage --verbose --passWithNoTests",
     "debug": "nest start --debug --watch",
     "dev": "nest start --watch",
     "doc": "npx compodoc -p tsconfig.json -s --theme laravel --disableCoverage",
